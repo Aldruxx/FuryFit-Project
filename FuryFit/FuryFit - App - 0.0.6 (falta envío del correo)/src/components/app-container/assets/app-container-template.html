@@ -1,0 +1,13 @@
+<div id="container-of-entire-app">
+
+    <!-- Top menu, with binded variables -->
+    <ff-menu m-flags="appCtrl.pageControlls"></ff-menu>
+
+    <!-- Dynamic body, because changes depending on menu clicks. Contains more components -->
+    <ff-dynbody me-flags="appCtrl.pageControlls" diet-packg="appCtrl.dietsPackage" workouts-packg="appCtrl.workoutsPackage"
+    links-package="appCtrl.linksPackage" faqs-packag="appCtrl.faqsPackage"></ff-dynbody>
+
+    <!-- Bottom footer -->
+    <ff-footer></ff-footer>
+
+</div>

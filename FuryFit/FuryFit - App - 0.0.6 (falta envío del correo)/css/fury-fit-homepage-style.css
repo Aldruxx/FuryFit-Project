@@ -1,0 +1,89 @@
+body {
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+.words-message-body {
+    color: #63D9FC;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.words-message-mind {
+    color: rgb(10, 159, 204);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.words-message-perseverance {
+    color: rgb(0, 113, 148);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.words-message-long-message {
+    color: #757575;
+    margin-top: 25px;
+}
+
+.motivating-words-box {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.second-container-of-content {
+    width: 100%;
+    margin-top: 200px;
+    background-color: white;
+    border-top: 1px #cacaca solid;
+    height: 250px;
+}
+
+.second-container-innner {
+    width: 60%;
+    margin: auto;
+}
+
+.images-motiv-container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.table-homep {
+    text-align: center;
+    width: 50%;
+}
+
+td {
+    width: 90px;
+    height: 150px;
+    text-align: center;
+}
+
+.table-text {
+    color: rgb(10, 159, 204);
+    font-weight: bold;
+}
+
+.button-container-style-welcomepage {
+    margin-top: 3%;
+}
+
+.fast-login-button {
+    background-color: #63D9FC;
+    font-weight: bold;
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 25px;
+    width: 280px;
+    font-size: 16px;
+}
+
+.home-page-image-position {
+    position: absolute;
+    right: 0;
+    margin-top: -8%;
+}

@@ -1,0 +1,49 @@
+body {
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+.main-faq-table-container {
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin-top: 5%;
+    margin-bottom:5%;
+}
+
+.alternative-faq-cell {
+    height: 40px;
+}
+
+.message-faq-title-container {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.faq-each-titles {
+    color: rgb(10, 159, 204);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.faq-answer-text {
+    color: #757575;
+    font-size: 13px;
+}
+
+.colored-faq-bottom-cell {
+    border-bottom: 2px rgb(0, 113, 148) solid; 
+}
+
+.faq-table-style {
+    margin: auto;
+    padding: 5px;
+    width: 75%;
+}
+
+.faq-title {
+    color: #63D9FC;
+    font-size: 28px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,144 @@
+body {
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+.main-contact-form-box-style {
+    margin: auto;
+    text-align: center;
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.inputbox {
+    width: 200px;
+    height: 26px;
+    border: none;
+    border: 1px white solid;
+    float: left;
+}
+
+.loading-text-message {
+    font-size: 14px;
+    color: rgb(0, 113, 148);
+}
+
+.message-disclaimer-macrocalc {
+    color: #757575;
+    font-size: 13px;
+}
+
+.select-box {
+    width: 270px;
+    height: 26px;
+    border: none;
+    border: 1px white solid;
+    float: left;
+}
+
+.calcular-btn {
+    width: 270px;
+    height: 35px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(10, 159, 204);
+    font-size: 17px;
+}
+
+.contact-title {
+    color: #63D9FC;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.credentials-container {
+    background-color: white;
+    border: 1px #cacaca solid;
+    width: 270px;
+    height: 30px;
+}
+
+.message-container {
+    background-color: white;
+    margin: auto;
+    border: 1px #cacaca solid;
+    width: 270px;
+    height: 110px;
+}
+
+.select-box {
+    width: 270px;
+    height: 26px;
+    border: none;
+    border: 1px white solid;
+}
+
+.select-data-container {
+    background-color: white;
+    border: 1px #cacaca solid;
+    width: 270px;
+    margin: auto;
+    height: 30px;
+}
+
+.macrocalc-each-titles {
+    color: rgb(10, 159, 204);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.macrocalc-each-titles-result {
+    color: rgb(10, 159, 204);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.macrocalc-form-complete-container {
+    margin: auto;
+    margin-top: 20px;
+    width: 860px;
+}
+
+.tabla-macros {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.tabla-macros-2 {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.fields-title-containers {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.fields-title-right-containers {
+    text-align: right;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.result-text-macrocalc {
+    color: rgb(0, 113, 148);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.red-text {
+    color: red;
+}
+
+.red-text-error {
+    color: red;
+    font-size: 12px;
+}

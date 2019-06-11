@@ -1,0 +1,38 @@
+<div>
+
+    <!-- Homepage section -->
+    <section>
+        <home-page ng-if="dynBController.meFlags.isOnHome" flag-list="dynBController.meFlags"></home-page>
+    </section>
+
+    <!-- Diets section -->
+    <section>
+        <diets-page ng-if="dynBController.meFlags.isOnNutrition" diet-list="dynBController.dietPackg"></diets-page>
+    </section>
+
+    <!-- Workouts section -->
+    <section>
+        <workouts-page ng-if="dynBController.meFlags.isOnWorkouts" workout-list="dynBController.workoutsPackg"></workouts-page>
+    </section>
+
+    <!-- MacroCalc section -->
+    <section>
+        <macro-calculator ng-if="dynBController.meFlags.isOnMacrocalc"></macro-calculator>
+    </section>
+
+    <!-- Interesting links section -->
+    <section>
+        <interesting-links-page  ng-if="dynBController.meFlags.isOnInterestingLinks" intr-list="dynBController.linksPackage"></interesting-links-page>
+    </section>
+
+    <!-- Contact section -->
+    <section>
+        <contact-page ng-if="dynBController.meFlags.isOnContact"></contact-page>
+    </section>
+
+    <!-- FAQ page -->
+    <section>
+        <faqs-page ng-if="dynBController.meFlags.isOnFAQ" faq-list="dynBController.faqsPackag"></faqs-page>
+    </section>
+
+</div>

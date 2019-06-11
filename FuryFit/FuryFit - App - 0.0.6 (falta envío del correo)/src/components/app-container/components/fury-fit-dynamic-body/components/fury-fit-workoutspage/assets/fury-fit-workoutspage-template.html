@@ -1,0 +1,35 @@
+<div id="main-cards-container" class="main-table-container">
+    <!-- Black borders 2px -->
+    <table ng-repeat="workout in workoutsCtrl.workoutList">
+        <div> <!-- ng-repeat on this div to be able to repeat both cells -->
+            <tr>
+                <td class="diet-container">
+                    <div id="card-container" class="card-container">
+                        <div class="img-background">
+                        </div>
+                        <div class="title-container">
+                            <span>{{workout.name}}</span> <!-- {{item.name}} -->
+                        </div>
+                        <div class="type-container">
+                            <span class="type-all-text">
+                                <type class="type-format">Tipo:</type> {{workout.type}}
+                            </span> <!-- {{item.type}} -->
+                        </div>
+                        <div class="description-container">
+                            <div id="title-diet-consist-container" class="diet-title-consist">
+                                <span>Explicación del entrenamiento:</span>
+                            </div>
+                            <div class="description-of-workout-box">
+                                <p>{{workout.description}}</p>
+                                <!-- {{item.description}} -->
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="alternative-cell"></td>
+            </tr>
+        </div>
+    </table>
+</div>

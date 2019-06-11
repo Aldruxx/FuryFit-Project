@@ -1,0 +1,44 @@
+body {
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+.main-interest-links-form-box-style {
+    margin: auto;
+    text-align: center;
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.interes-links-title {
+    color: #63D9FC;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.interes-links-subtitle {
+    color: rgb(10, 159, 204);
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+.contact-table-box-style {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.interest-links-cell-style {
+    box-shadow: 10px -8px 16px -3px rgba(107, 106, 106, 0.84);
+    -webkit-box-shadow: 10px -8px 16px -3px rgba(107, 106, 106, 0.84);
+    -moz-box-shadow: 10px -8px 16px -3px rgba(107, 106, 106, 0.84);
+}
+
+.alternative-cell-interest-links {
+    background-color: rgb(240, 240, 240);
+    height: 40px;
+}

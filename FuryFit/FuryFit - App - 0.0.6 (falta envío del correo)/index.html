@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es" data-ng-app="ffapp">
+
+    <head>
+
+        <meta charset="utf-8"/>
+        <title>Fury Fit</title>
+
+        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+
+        <!-- CSS declaration -->
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-menu-style.css">
+
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-footer-style.css">
+
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-dynamic-body-style.css">
+
+        <!-- All dynamic body components CSS declaration -->
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-homepage-style.css">
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-dietspage-style.css">
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-workoutspage-style.css">
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-contactpage-style.css">
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-interestinglinks-style.css">
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-macrocalcpage-style.css">
+        <link rel="stylesheet" type="text/css" href="css/fury-fit-faqspage-style.css">
+
+    </head>
+
+    <body>
+
+        <app-container></app-container>
+        
+    </body>
+
+    <!-- AngularJS minified library (CDN) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+
+    <!-- JQuery script minified -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Module injector, provides a new module that contains my app -->
+    <script src="src/components/fury-fit-app-module.js"></script>
+
+    <!-- SERVICES -->
+    <!-- Diet services (in dependency order) -->
+    <script src="src/services/http-services/fury-fit-diets-service/proxies/fury-fit-diets-proxy.js"></script>
+    <script src="src/services/http-services/fury-fit-diets-service/services/fury-fit-diets-http-service.js"></script>
+
+    <!-- Workout services (in dependency order) -->
+    <script src="src/services/http-services/fury-fit-workouts-service/proxies/fury-fit-workouts-proxy.js"></script>
+    <script src="src/services/http-services/fury-fit-workouts-service/services/fury-fit-workouts-http-service.js"></script>
+
+    <!-- Interest links services (in dependency order) -->
+    <script src="src/services/http-services/fury-fit-interestlinks-service/proxies/fury-fit-interestlinks-proxy.js"></script>
+    <script src="src/services/http-services/fury-fit-interestlinks-service/services/fury-fit-interestlinks-http-service.js"></script>
+
+    <!-- FAQs services (in dependency order) -->
+    <script src="src/services/http-services/fury-fit-faqs-service/proxies/fury-fit-faqs-service-proxy.js"></script>
+    <script src="src/services/http-services/fury-fit-faqs-service/services/fury-fit-faqs-service-http-service.js"></script>
+
+    <!-- Macro calculator services (in dependency order) -->
+    <script src="src/services/http-services/fury-fit-macrocalculator-service/proxy/fury-fit-macrocalculator-proxy.js"></script>
+    <script src="src/services/http-services/fury-fit-macrocalculator-service/services/fury-fit-macrocalculator-http-service.js"></script>
+
+    <!-- Whole page service -->
+    <script src="src/services/fury-fit-service.js"></script>
+
+    <!-- App container script declaration -->
+    <script src="src/components/app-container/app-container-component.js"></script>
+    <script src="src/components/app-container/app-container-controller.js"></script>
+
+    <!-- Menu script declaration -->
+    <script src="src/components/app-container/components/fury-fit-menu/component/fury-fit-menu-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-menu/controller/fury-fit-menu-controller.js"></script>
+
+    <!-- Dynamic body script declaration. Contains more components specified below -->
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-dynamic-body-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/controller/fury-fit-dynamic-body-controller.js"></script>
+
+    <!-- Homepage script declaration (is opened when page is loaded). Access via click on menu and logo -->
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-homepage/component/fury-fit-homepage-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-homepage/controller/fury-fit-homepage-controller.js"></script>
+
+    <!-- Diets/Nutrition script declaration -->
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-dietspage/component/fury-fit-dietspage-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-dietspage/controller/fury-fit-dietspage-controller.js"></script>
+
+    <!-- Workouts script declaration -->
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-workoutspage/component/fury-fit-workoutspage-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-workoutspage/controller/fury-fit-workoutspage-controller.js"></script>
+
+    <!-- Macro calculator script declaration -->
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-macrocalculator-page/component/fury-fit-macrocalculator-page-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-macrocalculator-page/controller/fury-fit-macrocalculator-page-controller.js"></script>
+
+    <!-- FAQ script declaration -->
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-faqspage/component/fury-fit-faqspage-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-faqspage/controller/fury-fit-faqspage-controller.js"></script>
+
+    <!-- Contact script declaration -->
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-contactpage/component/fury-fit-contactpage-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-contactpage/controller/fury-fit-contactpage-controller.js"></script>
+
+    <!-- Interesting links script declaration -->
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-interestinglinks-page/component/fury-fit-interestinglinks-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-dynamic-body/components/fury-fit-interestinglinks-page/controller/fury-fit-interestinglinks-controller.js"></script>
+
+    <!-- Footer script declaration -->
+    <script src="src/components/app-container/components/fury-fit-footer/component/fury-fit-footer-component.js"></script>
+    <script src="src/components/app-container/components/fury-fit-footer/controller/fury-fit-footer-controller.js"></script>
+
+</html>

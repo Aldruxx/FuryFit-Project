@@ -1,0 +1,20 @@
+<div id="main-interest-links-form-container" class="main-interest-links-form-box-style">
+    <div id="interest-link-container" class="interes-links-title">
+        <span>Enlaces de interés</span>
+    </div>
+    <div id="interest-link-subtitle" class="interes-links-subtitle">
+        <span>Páginas con más información sobre fitness, disfrútalas</span>
+    </div>
+    <table id="links-container" class="contact-table-box-style" ng-repeat="intrLink in ilinksCtrl.intrList"> <!-- ng-repeat for each item in db -->
+        <tr>
+            <td class="interest-links-cell-style">
+                <a href="{{intrLink.pageLink}}" target="blank"> <!-- {{item.pageLink}} -->
+                    <img src="{{intrLink.picSRC}}" width:="90px" height="90px" /> <!-- {{item.picSRC}} -->
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="alternative-cell-interest-links"></td>
+        </tr>
+    </table>
+</div>

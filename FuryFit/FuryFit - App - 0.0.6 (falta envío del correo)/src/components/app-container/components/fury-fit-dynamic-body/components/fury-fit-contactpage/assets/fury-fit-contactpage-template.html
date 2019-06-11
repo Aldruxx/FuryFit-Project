@@ -1,0 +1,43 @@
+<div id="main-contact-form-container" class="main-contact-form-box-style">
+        <div id="contact-title-container">
+            <span class="contact-title">Contacta con nuestro soporte</span>
+        </div>
+        <br />
+        <div>
+            <div id="complete-form-container" class="form-complete-container">
+                <div class="fields-title-containers">
+                    <span>Nombre completo</span><span class="red-text">*</span>
+                </div>
+                <div id="name-contact-container" class="credentials-container">
+                    <input type="text" name="contact-name" class="inputbox" ng-model="contactCtrl.nameOfUserToContact"/> <!-- Ng.model -->
+                </div>
+                <br />
+                <div class="fields-title-containers">
+                    <span>E-mail</span><span class="red-text">*</span>
+                </div>
+                <div id="email-contact-container" class="credentials-container">
+                    <input type="text" name="contact-email" class="inputbox" ng-model="contactCtrl.emailOfUserToContact"/> <!-- Ng.model --> <!-- Check if contains @ -->
+                </div>
+                <div id="error-in-mail-introduction" class="error-in-mail" ng-if="contactCtrl.errorInMailIntroduction">
+                    <span class="red-text-error">Debes introducir una dirección de correo válida</span>
+                </div>
+                <br />
+                <div class="fields-title-containers">
+                    <span>Mensaje</span><span class="red-text">*</span>
+                </div>
+                <div id="message-contact-container" class="message-container">
+                    <textarea name="contact-message" class="text-area-box" ng-model="contactCtrl.messageOfUserToContact"></textarea> <!-- Ng.model -->
+                </div>
+            </div>
+            <br />
+            <div id="submit-button-container-contact">
+                <button name="submitButton" class="submitBtn" ng-click="contactCtrl.sendMail()">Enviar</button> <!-- Ng-click that activates the http call -->
+            </div>
+            <br />
+            <!-- Ng-if only if not all fields are filled -->
+            <div id="submit-button-container" ng-if="contactCtrl.showErrorInDataIntroduction">
+                <span class="red-text-error">Todos los campos son obligatorios, por favor, rellénalos antes de continuar.</span>
+            </div>
+            <!-- End of ng-if -->
+        </div>
+    </div>

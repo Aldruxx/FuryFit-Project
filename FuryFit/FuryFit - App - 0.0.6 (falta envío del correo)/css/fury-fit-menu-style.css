@@ -1,0 +1,104 @@
+body {
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+.menu-box {
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px #cacaca solid;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.menu-table {
+    margin: auto;
+    width: 95%;
+    height: 91px;
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    font-size: 12px;
+}
+
+.image-cell {
+    text-align: left;
+    width: 5%;
+}
+
+.inicio-cell {
+    width: 5%;
+    color: #757575;
+}
+
+.nutri-cell {
+    width: 5%;
+    color: #757575;
+}
+
+.entrenamiento-cell {
+    width: 6%;
+    color: #757575;
+}
+
+.macro-calc-cell {
+    width: 9%;
+    color: #757575;
+}
+
+.contact-cell {
+    width: 18%;
+    text-align: left;
+    color: #757575;
+    padding-left: 20px;
+}
+
+.interest-cell {
+    width: 15%;
+    text-align: left;
+    padding-left: 30px;
+    color: #757575;
+}
+
+.login-cell {
+    width: 8%;
+    text-align: right;
+    color: #757575;
+}
+
+.register-cell {
+    width: 5%;
+    text-align: right;
+    color: #757575;
+}
+
+.hand-cursor-home-logo {
+    cursor: pointer;
+}
+
+a:link {
+    color: #757575;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #757575;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #63D9FC;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}

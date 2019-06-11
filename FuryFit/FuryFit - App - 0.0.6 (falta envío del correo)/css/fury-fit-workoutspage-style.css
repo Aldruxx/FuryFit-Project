@@ -1,0 +1,87 @@
+body {
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+.main-table-container {
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin-top: 5%;
+    margin-bottom:5%;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+}
+
+.type-format {
+    color: rgb(10, 159, 204);
+    font-weight: bold;
+}
+
+.type-all-text {
+    font-size: 18px;
+}
+
+.diet-title-consist {
+    text-align: left;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.card-container {
+    box-shadow: 10px -8px 16px -3px rgba(107, 106, 106, 0.84);
+    -webkit-box-shadow: 10px -8px 16px -3px rgba(107, 106, 106, 0.84);
+    -moz-box-shadow: 10px -8px 16px -3px rgba(107, 106, 106, 0.84);
+}
+
+.diet-container {
+    border: 1px rgb(240, 240, 240) solid;
+}
+
+.alternative-cell {
+    background-color: rgb(240, 240, 240);
+    height: 40px;
+}
+
+tr, td {
+    height: 100px;
+    padding: 0px;
+}
+
+.title-container {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.description-container {
+    margin-top: 15px;
+    color: rgb(102, 102, 102);
+}
+
+.description-of-workout-box {
+    text-align: justify;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-bottom: 2px;
+}
+
+.type-container {
+    margin-top: 15px;
+}
+
+.img-background {
+    height: 275px;
+    width: 100%;
+    background-image: url("/src/images/workouts-cards-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px black solid;
+    background-position: center;
+    vertical-align: top;
+    background-color: black;
+}

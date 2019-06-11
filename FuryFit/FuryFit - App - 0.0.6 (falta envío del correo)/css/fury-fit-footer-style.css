@@ -1,0 +1,67 @@
+.footer-main-box {
+    background-color: #63D9FC;
+    width: 100%;
+    position: relative;
+    height: 310px;
+    padding-top: 35px;
+}
+
+.copyright-bottom-box {
+    position: absolute;
+    background-color: rgb(0, 113, 148);
+    bottom: 0;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    height: 50px;
+}
+
+.message-cpr-box {
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.middle-aligned {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.centered-inner-container {
+    margin: auto;
+    color: white;
+    height: 200px;
+    width: 650px;
+}
+
+.centered-box {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    font-size: 23px;
+}
+
+.mini-cpr-msg {
+    width: 100%;
+    margin-top: 45px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.smtable {
+    width: 50%;
+    margin: auto;
+}
+
+.social-media-container {
+    width: 100%;
+    margin-top: 5px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}

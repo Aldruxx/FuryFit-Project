@@ -1,0 +1,103 @@
+body {
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin: 0px;
+    background-color: rgb(240, 240, 240);
+}
+
+.main-contact-form-box-style {
+    margin: auto;
+    text-align: center;
+    font-family: Helvetica, Arial, Lucida, sans-serif;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.inputbox {
+    width: 200px;
+    height: 26px;
+    border: none;
+    border: 1px white solid;
+    float: left;
+}
+
+.text-area-box {
+    width: 263px;
+    height: 100px;
+    border: none;
+    border: 1px white solid;
+    float: left;
+}
+
+.logos-inputs {
+    height: 100%;
+    width: 35px;
+    float: left;
+}
+
+.images-in-inputs {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 2.55px;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    outline: none;
+}
+
+.submitBtn {
+    width: 270px;
+    height: 35px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    background-color: #63D9FC;
+    font-size: 17px;
+}
+
+.contact-title {
+    color: #63D9FC;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.credentials-container {
+    background-color: white;
+    margin: auto;
+    border: 1px #cacaca solid;
+    width: 270px;
+    height: 30px;
+}
+
+.message-container {
+    background-color: white;
+    margin: auto;
+    border: 1px #cacaca solid;
+    width: 270px;
+    height: 110px;
+}
+
+.form-complete-container {
+    margin: auto;
+    margin-top: 15px;
+    width: 270px;
+}
+
+.fields-title-containers {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.red-text {
+    color: red;
+}
+
+.red-text-error {
+    color: red;
+    font-size: 12px;
+}
+
+.error-in-mail {
+    margin-top: 5px;
+}

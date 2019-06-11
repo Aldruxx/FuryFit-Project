@@ -1,0 +1,33 @@
+<div id="main-cards-container" class="main-table-container-diets">
+    <table ng-repeat="item in dietsCtrl.dietList">
+            <tr>
+                <td class="diet-container">
+                    <div id="card-container" class="card-container">
+                        <div class="img-background-nutrition">
+                        </div>
+                        <div class="title-container">
+                            <span>{{item.name}}</span> <!-- {{item.name}} -->
+                        </div>
+                        <div class="type-container">
+                            <span class="type-all-text">
+                                <type class="type-format">Tipo:</type> {{item.type}}
+                            </span> <!-- {{item.type}} -->
+                        </div>
+                        <div class="description-container">
+                            <div id="title-diet-consist-container" class="diet-title-consist">
+                                <span>Explicación de la dieta:</span>
+                            </div>
+                            <div class="description-of-diet-box">
+                                <p>{{item.description}}</p>
+                                <!-- {{item.description}} -->
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="alternative-cell"></td>
+            </tr>
+        </div>
+    </table>
+</div>

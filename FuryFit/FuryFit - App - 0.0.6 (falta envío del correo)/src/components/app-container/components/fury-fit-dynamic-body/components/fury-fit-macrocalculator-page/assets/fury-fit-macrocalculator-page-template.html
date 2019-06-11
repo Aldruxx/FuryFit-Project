@@ -1,0 +1,135 @@
+<div id="main-macros-form-container" class="main-contact-form-box-style">
+    <div id="macros-title-container">
+        <span class="contact-title">Calculadora de macros</span>
+    </div>
+    <br />
+    <div>
+        <div id="complete-form-container" class="macrocalc-form-complete-container">
+            <table class="tabla-macros">
+                <tr>
+                    <td style="width: 100%;">
+                        <span class="macrocalc-each-titles">Sexo</span>
+                        <br /><br />
+                        <div id="sex-input-container" class="select-data-container">
+                            <select name="macrocalc-sex" class="select-box" ng-model="macrocalcCtrl.sexo">
+                                <option value="" disabled selected>Selecciona tu sexo...</option>
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                            </select>
+                        </div>
+                    </td> <!-- Sex field container -->
+                </tr>
+            </table>
+            <div style="margin-top: 35px;">
+                <table class="tabla-macros">
+                    <tr>
+                        <td style="width: 30%;">
+                            <span class="macrocalc-each-titles">Edad</span>
+                            <br /><br />
+                            <div id="sex-input-container" class="select-data-container">
+                                <select name="macrocalc-edad" class="select-box" ng-model="macrocalcCtrl.edad">
+                                    <!-- repeat de un array del controller -->
+                                    <option value="" disabled selected>Selecciona tu edad...</option>
+                                    <option ng-repeat="age in macrocalcCtrl.ageList" value="{{age}}">{{age}} años
+                                    </option>
+                                </select>
+                            </div>
+                        </td>
+                        <td style="width: 30%;">
+                            <span class="macrocalc-each-titles">Peso (kg)</span>
+                            <br /><br />
+                            <div id="sex-input-container" class="select-data-container">
+                                <select name="macrocalc-peso" class="select-box" ng-model="macrocalcCtrl.peso">
+                                    <!-- repeat de un array del controller -->
+                                    <option value="" disabled selected>Selecciona tu peso...</option>
+                                    <option ng-repeat="pes in macrocalcCtrl.weightList" value="{{pes}}">{{pes}} kg
+                                    </option>
+                                </select>
+                            </div>
+                        </td>
+                        <td style="width: 30%;">
+                            <span class="macrocalc-each-titles">Altura (cm)</span>
+                            <br /><br />
+                            <div id="sex-input-container" class="select-data-container">
+                                <select name="macrocalc-altura" class="select-box" ng-model="macrocalcCtrl.altura">
+                                    <!-- repeat de un array del controller -->
+                                    <option value="" disabled selected>Selecciona tu altura...</option>
+                                    <option ng-repeat="alt in macrocalcCtrl.heightList" value="{{alt}}">{{alt}} cm
+                                    </option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin-top: 35px;">
+                <table class="tabla-macros-2">
+                    <tr>
+                        <td>
+                            <span class="macrocalc-each-titles">Objetivo</span>
+                            <br /><br />
+                            <div id="sex-input-container" class="select-data-container">
+                                <select name="macrocalc-objetivo" class="select-box" ng-model="macrocalcCtrl.objetivo">
+                                    <option value="" disabled selected>¿Qué quieres conseguir?</option>
+                                    <option value="Vol">Volumen</option>
+                                    <option value="Defi">Definición</option>
+                                    <option value="Mantenim">Mantenimiento</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="macrocalc-each-titles">Nivel de actividad física</span>
+                            <br /><br />
+                            <div id="sex-input-container" class="select-data-container">
+                                <select name="macrocalc-actividad" class="select-box"
+                                    ng-model="macrocalcCtrl.activityIndex">
+                                    <option value="" disabled selected>¿Cuánto ejercicio haces?</option>
+                                    <option value="Ligero">Ninguno / Poco</option>
+                                    <option value="Moderado">Entrenamiento normal</option>
+                                    <option value="Intenso">Entrenamiento intenso</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div style="margin-top: 40px;">
+        <button name="submitButton" class="calcular-btn" ng-click="macrocalcCtrl.calculateMacros()">Calcular
+            ahora</button>
+    </div>
+    <br />
+    <!-- Ng-if only if not all fields are filled -->
+    <div id="submit-button-container" ng-if="macrocalcCtrl.errorsInMacrocalcInputs">
+        <span class="red-text-error">Todos los campos son obligatorios, por favor, rellénalos antes de
+            continuar.</span>
+    </div>
+    <!-- End of ng-if -->
+    <!-- Loading spinner div -->
+    <div ng-if="macrocalcCtrl.showGifLoading">
+        <div style="margin: auto;">
+            <img src="/src/images/loading-spinner.gif" />
+            <br />
+            <span class="loading-text-message">Danos un segundo, estamos realizando complejas operaciones...</span>
+        </div>
+    </div>
+    <!-- End of loading spinner div -->
+    <div id="macrocalc-result-container" ng-if="macrocalcCtrl.promiseResolved">
+        <!-- ng-show cuando reciba la respuesta de la promesa -->
+        <div style="margin-top: 35px;">
+            <span class="macrocalc-each-titles-result">Tu resultado es:</span>
+        </div>
+        <div style="margin-top: 20px; margin-bottom: 10px;">
+            <span class="result-text-macrocalc">{{macrocalcCtrl.calculatedMacros}} kcal/día</span>
+        </div>
+        <div style="margin-top: 25px; width: 70%; margin: auto;">
+            <span class="message-disclaimer-macrocalc"><b>IMPORTANTE:</b> Debes tener en cuenta que este resultado es
+                tan solo una aproximación calculada mediante la fórmula de Harris Benedict (se puede buscar lo que
+                significa), no recomendamos ajustarse a estas calorías sin previa consulta con un profesional. La
+                ingesta calórica recomendada para adultos es 2000 kcal en hombres y 1500 kcal en mujeres.</span>
+        </div>
+    </div>
+</div>
+</div>
